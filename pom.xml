@@ -70,8 +70,7 @@
          <distributionManagement>
                   <repository>
                            <id>deploymentRepo</id>
-                           <name>Nexus Repository</name>
-                           <url>http://192.168.123.88:8081/repository/maven-releases/</url>
+                           <username>Nexus Repository</username>
                   </repository>
          </distributionManagement>
 </project>
