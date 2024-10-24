@@ -1,51 +1,61 @@
-package tn.esprit.tpfoyer17.services.implementations;
+package tn.esprit.tpfoyer17.controllers;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-import tn.esprit.tpfoyer17.entities.Universite;
-import tn.esprit.tpfoyer17.repositories.UniversiteRepository;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.experimental.FieldDefaults;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.*;
+import tn.esprit.tpfoyer17.entities.Bloc;
+import tn.esprit.tpfoyer17.services.interfaces.IBlocService;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+@RestController
+@AllArgsConstructor
+@Slf4j
+@FieldDefaults(level = AccessLevel.PRIVATE)
+@RequestMapping("api/blocs")
 
-public class UniversiteServiceTest {
 
-    @Mock
-    private UniversiteRepository universiteRepository;
-
-    @InjectMocks
-    private UniversiteService universiteService;
-
-    @BeforeEach
-    public void setup() {
-        // Initialise les mocks avant chaque test
-        MockitoAnnotations.initMocks(this);
+public class BlocController {
+    @GetMapping("/findByFoyerIdFoyer/{idFoyer}")
+    public List<Bloc> findByFoyerIdFoyer(@PathVariable("idFoyer") long idFoyer) {
+        return blocService.findByFoyerIdFoyer(idFoyer);
     }
 
-    @Test
-    public void testRetrieveAllUniversities() {
-        // Arrange
-        Universite universite1 = new Universite();
-        Universite universite2 = new Universite();
-        List<Universite> universites = Arrays.asList(universite1, universite2);
-
-        when(universiteRepository.findAll()).thenReturn(universites);
-
-        // Act
-        List<Universite> result = universiteService.retrieveAllUniversities();
-
-        // Assert
-        assertNotNull(result);
-        assertEquals(2, result.size());
-        verify(universiteRepository, times(1)).findAll();
+    @GetMapping("/findByChambresIdChambre/{idChambre}")
+    public Bloc findByChambresIdChambre(@PathVariable("idChambre") Long idChambre) {
+        return blocService.findByChambresIdChambre(idChambre);
     }
 
-    // Autres tests similaires...
+    IBlocService blocService;
+
+    @GetMapping("/retrieveBlocs")
+    public List<Bloc> retrieveBlocs() {
+        return blocService.retrieveBlocs();
+    }
+
+
+    @GetMapping("/retrieveBloc/{idBloc}")
+    public Bloc retrieveBloc(@PathVariable("idBloc") long idBloc) {
+        return blocService.retrieveBloc(idBloc);
+    }
+
+
+    @PostMapping("/addBloc")
+    public Bloc addBloc(@RequestBody Bloc bloc) {
+        return blocService.addBloc(bloc);
+    }
+
+
+    @PutMapping("/updateBloc")
+    public Bloc updateBloc(@RequestBody Bloc bloc) {
+        return blocService.updateBloc(bloc);
+    }
+
+
+    @DeleteMapping("/removeBloc/{idBloc}")
+    public void removeBloc(@PathVariable("idBloc") long idBloc) {
+        blocService.removeBloc(idBloc);
+    }
 }
