@@ -1,19 +1,19 @@
-package tn.esprit.tpfoyer17.services.impementations;
-import mockito;
-import static mockito.Mockito.*;
-import static unit.jupiter.api.Assertions.*;
-import mockito.InjectMocks;
-import mockito.Mock;
-import mockito.MockitoAnnotations;
-import junit.jupiter.api.BeforeEach;
-import junit.jupiter.api.Test;
+package tn.esprit.tpfoyer17.services.implementations;
 
-import static mockito.Mockito.*;
-
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import tn.esprit.tpfoyer17.entities.Universite;
+import tn.esprit.tpfoyer17.repositories.UniversiteRepository;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 public class UniversiteServiceTest {
 
@@ -25,9 +25,27 @@ public class UniversiteServiceTest {
 
     @BeforeEach
     public void setup() {
+        // Initialise les mocks avant chaque test
         MockitoAnnotations.initMocks(this);
     }
 
+    @Test
+    public void testRetrieveAllUniversities() {
+        // Arrange
+        Universite universite1 = new Universite();
+        Universite universite2 = new Universite();
+        List<Universite> universites = Arrays.asList(universite1, universite2);
+
+        when(universiteRepository.findAll()).thenReturn(universites);
+
+        // Act
+        List<Universite> result = universiteService.retrieveAllUniversities();
+
+        // Assert
+        assertNotNull(result);
+        assertEquals(2, result.size());
+        verify(universiteRepository, times(1)).findAll();
+    }
     @Test
     public void testAddUniversity() {
         // Arrange
@@ -44,22 +62,6 @@ public class UniversiteServiceTest {
         verify(universiteRepository, times(1)).save(universite);
     }
 
-    @Test
-    public void testRetrieveAllUniversities() {
-        // Arrange
-        Universite universite1 = new Universite();
-        universite1.setNom("University 1");
-        Universite universite2 = new Universite();
-        universite2.setNom("University 2");
-        when(universiteRepository.findAll()).thenReturn(Arrays.asList(universite1, universite2));
-
-        // Act
-        List<Universite> result = universiteService.retrieveAllUniversities();
-
-        // Assert
-        assertEquals(2, result.size());
-        verify(universiteRepository, times(1)).findAll();
-    }
 
     @Test
     public void testRetrieveUniversity() {
