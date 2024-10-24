@@ -1,9 +1,8 @@
 package tn.esprit.tpfoyer17.configurations;
 
-import io.swagger.v3.oas.models.*;
+import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
-
 import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,7 +20,6 @@ public class SpringDocConfig {
                 .contact(contactAPI());
     }
 
-
     public Contact contactAPI() {
         return new Contact().name("Equipe ASI II")
                 .email("chahnez.sardouk@esprit.tn")
@@ -36,6 +34,7 @@ public class SpringDocConfig {
                 .pathsToExclude("**")
                 .build();
     }
+
     @Bean
     public GroupedOpenApi blocApi() {
         return GroupedOpenApi.builder()
@@ -44,6 +43,7 @@ public class SpringDocConfig {
                 .pathsToExclude("**")
                 .build();
     }
+
     @Bean
     public GroupedOpenApi reservationApi() {
         return GroupedOpenApi.builder()
@@ -52,6 +52,7 @@ public class SpringDocConfig {
                 .pathsToExclude("**")
                 .build();
     }
+
     @Bean
     public GroupedOpenApi foyerApi() {
         return GroupedOpenApi.builder()
@@ -60,6 +61,7 @@ public class SpringDocConfig {
                 .pathsToExclude("**")
                 .build();
     }
+
     @Bean
     public GroupedOpenApi universiteApi() {
         return GroupedOpenApi.builder()
@@ -68,14 +70,13 @@ public class SpringDocConfig {
                 .pathsToExclude("**")
                 .build();
     }
+
     @Bean
-   public GroupedOpenApi etudiantApi() {
+    public GroupedOpenApi etudiantApi() {
         return GroupedOpenApi.builder()
                 .group("Only Etudiant Management API")
                 .pathsToMatch("/api/etudiants/**")
-               .pathsToExclude("**")
+                .pathsToExclude("**")
                 .build();
     }
-
 }
-
