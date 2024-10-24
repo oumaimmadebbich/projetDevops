@@ -16,7 +16,7 @@ public class SpringDocConfig {
 
     public Info infoAPI() {
         return new Info().title("SpringDoc-Demo")
-                .description("TP \u00e9tude de cas")
+                .description("TP étude de cas")
                 .contact(contactAPI());
     }
 
@@ -31,7 +31,6 @@ public class SpringDocConfig {
         return GroupedOpenApi.builder()
                 .group("Only Chambre Management API")
                 .pathsToMatch("/api/chambres/**")
-                .pathsToExclude("**")
                 .build();
     }
 
@@ -40,7 +39,6 @@ public class SpringDocConfig {
         return GroupedOpenApi.builder()
                 .group("Only Bloc Management API")
                 .pathsToMatch("/api/blocs/**")
-                .pathsToExclude("**")
                 .build();
     }
 
@@ -49,7 +47,6 @@ public class SpringDocConfig {
         return GroupedOpenApi.builder()
                 .group("Only Reservation Management API")
                 .pathsToMatch("/api/reservations/**")
-                .pathsToExclude("**")
                 .build();
     }
 
@@ -58,7 +55,6 @@ public class SpringDocConfig {
         return GroupedOpenApi.builder()
                 .group("Only Foyer Management API")
                 .pathsToMatch("/api/foyers/**")
-                .pathsToExclude("**")
                 .build();
     }
 
@@ -67,7 +63,6 @@ public class SpringDocConfig {
         return GroupedOpenApi.builder()
                 .group("Only Universite Management API")
                 .pathsToMatch("/api/universites/**")
-                .pathsToExclude("**")
                 .build();
     }
 
@@ -76,7 +71,6 @@ public class SpringDocConfig {
         return GroupedOpenApi.builder()
                 .group("Only Etudiant Management API")
                 .pathsToMatch("/api/etudiants/**")
-                .pathsToExclude("**")
                 .build();
     }
 }
