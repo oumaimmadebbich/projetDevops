@@ -16,7 +16,7 @@ public class SpringDocConfig {
 
     public Info infoAPI() {
         return new Info().title("SpringDoc-Demo")
-                .description("TP étude de cas")
+                .description("TP \u00e9tude de cas")
                 .contact(contactAPI());
     }
 
@@ -66,7 +66,7 @@ public class SpringDocConfig {
     public GroupedOpenApi universiteApi() {
         return GroupedOpenApi.builder()
                 .group("Only Universite Management API")
-                .pathsToMatch("/api/univeristes/**")
+                .pathsToMatch("/api/universites/**")
                 .pathsToExclude("**")
                 .build();
     }
