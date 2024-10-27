@@ -1,108 +1,60 @@
-package src;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+package tn.esprit.tpfoyer17.services.impementations;
+
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.experimental.FieldDefaults;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import tn.esprit.tpfoyer17.entities.Foyer;
 import tn.esprit.tpfoyer17.entities.Universite;
+import tn.esprit.tpfoyer17.repositories.FoyerRepository;
 import tn.esprit.tpfoyer17.repositories.UniversiteRepository;
+import tn.esprit.tpfoyer17.services.interfaces.IUniversiteService;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
-
-public class UniversiteServiceTest {
-
-    @Mock
-    private UniversiteRepository universiteRepository;
-
-    @InjectMocks
-    private UniversiteService universiteService;
-
-    @BeforeEach
-    public void setup() {
-        // Initialise les mocks avant chaque test
-        MockitoAnnotations.initMocks(this);
+@Service
+@AllArgsConstructor
+@Slf4j
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class UniversiteService implements IUniversiteService {
+    UniversiteRepository universiteRepository;
+    FoyerRepository foyerRepository;
+    @Override
+    public List<Universite> retrieveAllUniversities() {
+        return (List<Universite>) universiteRepository.findAll();
     }
 
-    @Test
-    public void testRetrieveAllUniversities() {
-        // Arrange
-        Universite universite1 = new Universite();
-        Universite universite2 = new Universite();
-        List<Universite> universites = Arrays.asList(universite1, universite2);
-
-        when(universiteRepository.findAll()).thenReturn(universites);
-
-        // Act
-        List<Universite> result = universiteService.retrieveAllUniversities();
-
-        // Assert
-        assertNotNull(result);
-        assertEquals(2, result.size());
-        verify(universiteRepository, times(1)).findAll();
+    @Override
+    public Universite addUniversity(Universite u) {
+        return universiteRepository.save(u);
     }
 
-    @Test
-    public void testAddUniversity() {
-        // Arrange
-        Universite universite = new Universite();
-        when(universiteRepository.save(any(Universite.class))).thenReturn(universite);
-
-        // Act
-        Universite result = universiteService.addUniversity(universite);
-
-        // Assert
-        assertNotNull(result);
-        verify(universiteRepository, times(1)).save(universite);
+    @Override
+    public Universite updateUniversity(Universite u) {
+        return universiteRepository.save(u);
     }
 
-    @Test
-    public void testUpdateUniversity() {
-        // Arrange
-        Universite universite = new Universite();
-        universite.setId(1L);
-
-        when(universiteRepository.save(any(Universite.class))).thenReturn(universite);
-
-        // Act
-        Universite result = universiteService.updateUniversity(universite);
-
-        // Assert
-        assertNotNull(result);
-        verify(universiteRepository, times(1)).save(universite);
+    @Override
+    public Universite retrieveUniversity(long idUniversity) {
+        return universiteRepository.findById(idUniversity).orElse(null);
     }
 
-    @Test
-    public void testRetrieveUniversity() {
-        // Arrange
-        Universite universite = new Universite();
-        universite.setId(1L);
 
-        when(universiteRepository.findById(1L)).thenReturn(Optional.of(universite));
-
-        // Act
-        Universite result = universiteService.retrieveUniversity(1L);
-
-        // Assert
-        assertNotNull(result);
-        assertEquals(1L, result.getId());
-        verify(universiteRepository, times(1)).findById(1L);
+    @Override
+    public Universite desaffecterFoyerAUniversite( long idUniversite) {
+        Universite universite = universiteRepository.findById(idUniversite).orElse(null);
+       // Foyer foyer = foyerRepository.findById(idFoyer).orElse(null);
+        universite.setFoyer(null);
+        return  universiteRepository.save(universite);
     }
 
-    @Test
-    public void testDeleteUniversity() {
-        // Arrange
-        Universite universite = new Universite();
-        universite.setId(1L);
+    @Override
+    public Universite affecterFoyerAUniversite(long idFoyer, String nomUniversite) {
+        Foyer foyer = foyerRepository.findById(idFoyer).orElse(null);
+        Universite universite = universiteRepository.findByNomUniversiteLike(nomUniversite);
+        universite.setFoyer(foyer);
+        return universiteRepository.save(universite);
 
-        // Act
-        universiteService.deleteUniversity(1L);
-
-        // Assert
-        verify(universiteRepository, times(1)).deleteById(1L);
     }
 }
