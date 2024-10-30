@@ -22,7 +22,7 @@ class UniversiteServiceTests {
     @Autowired
     UniversiteService universiteService;
     @Test
-    void contextLoads()() {
+    void contextLoads() {
     }
 
 }
