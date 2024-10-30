@@ -20,6 +20,7 @@ import java.util.List;
 public class UniversiteService implements IUniversiteService {
     UniversiteRepository universiteRepository;
     FoyerRepository foyerRepository;
+
     @Override
     public List<Universite> retrieveAllUniversities() {
         return (List<Universite>) universiteRepository.findAll();
