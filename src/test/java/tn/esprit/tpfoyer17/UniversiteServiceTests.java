@@ -13,16 +13,16 @@ import tn.esprit.tpfoyer17.repositories.UniversiteRepository;
 import tn.esprit.tpfoyer17.entities.Universite;
 import tn.esprit.tpfoyer17.services.impementations.UniversiteService;
 
-@SpringBootTest
+
 @ExtendWith(SpringExtension.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-
+@SpringBootTest
 @Slf4j
 class UniversiteServiceTests {
     @Autowired
     UniversiteService universiteService;
     @Test
-    void addUniversitytest() {
+    void contextLoads()() {
     }
 
 }
