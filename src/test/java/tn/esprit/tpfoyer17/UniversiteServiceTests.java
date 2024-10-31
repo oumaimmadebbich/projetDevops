@@ -1,7 +1,7 @@
 package tn.esprit.tpfoyer17;
 
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Assertions;
+import static org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import static org.mockito.Mockito.*;
@@ -14,7 +14,6 @@ import tn.esprit.tpfoyer17.services.impementations.UniversiteService;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import java.util.*;
-import org.junit.Assert;
 
 @ExtendWith(MockitoExtension.class)
 
@@ -28,6 +27,6 @@ public class UniversiteServiceTests{
         Universite newuniversitie= new Universite();
         when(universiteRepository.save(newuniversitie)).thenReturn(newuniversitie);
         Universite saveUniversity=universiteService.addUniversity(newuniversitie);
-        Assert.assertEquals(newuniversitie,saveUniversity);
+        assertEquals(newuniversitie,saveUniversity);
     }
 }
