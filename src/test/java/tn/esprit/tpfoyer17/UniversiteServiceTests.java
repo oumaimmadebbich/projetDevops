@@ -22,7 +22,10 @@ class UniversiteServiceTests {
     @Autowired
     UniversiteService universiteService;
     @Test
-    void contextLoads() {
+    void addUniversitytest() {
+        Universite newuniversitie= Universite.builder().nomUniversite("ESPRIT").adresse("ariena")
+                .build();
+        Universite saveUniversity=universiteService.addUniversity(newuniversitie);
+        Assertions.assertNotNull(saveUniversity.getIdUniversite());
     }
-
 }
