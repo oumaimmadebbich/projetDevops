@@ -22,7 +22,7 @@ import static org.mockito.Mockito.*;
 
 @Slf4j
 @ExtendWith(MockitoExtension.class)
-public class UniversiteServiceTest {
+public class UniversiteServiceTests {
 
     @Mock
     UniversiteRepository universiteRepository;
@@ -53,7 +53,6 @@ public class UniversiteServiceTest {
         // Assert
         assertNotNull(savedUniversite);
         assertEquals("Université de Test", savedUniversite.getNomUniversite());
-        log.info("Universite ajoutée avec succès : {}", savedUniversite);
     }
 
     @Test
@@ -71,7 +70,6 @@ public class UniversiteServiceTest {
         // Assert
         assertNotNull(updatedUniversite);
         assertEquals("Université de Test", updatedUniversite.getNomUniversite());
-        log.info("Universite mise à jour avec succès : {}", updatedUniversite);
     }
 
     @Test
@@ -87,7 +85,6 @@ public class UniversiteServiceTest {
         // Assert
         assertNotNull(result);
         assertEquals("Université de Test", result.getNomUniversite());
-        log.info("Universite récupérée avec succès : {}", result);
     }
 
     @Test
@@ -106,7 +103,6 @@ public class UniversiteServiceTest {
         // Assert
         assertNotNull(result);
         assertNull(result.getFoyer());
-        log.info("Foyer désaffecté de l'université avec succès : {}", result);
     }
 
     @Test
@@ -126,7 +122,6 @@ public class UniversiteServiceTest {
         // Assert
         assertNotNull(result);
         assertNotNull(result.getFoyer());
-        log.info("Foyer affecté à l'université avec succès : {}", result);
     }
 
     @Test
@@ -147,6 +142,5 @@ public class UniversiteServiceTest {
         // Assert
         assertNotNull(result);
         assertEquals(2, result.size());
-        log.info("Toutes les universités récupérées avec succès : {}", result);
     }
 }
