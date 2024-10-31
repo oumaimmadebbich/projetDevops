@@ -14,7 +14,6 @@ import tn.esprit.tpfoyer17.repositories.EtudiantRepository;
 import tn.esprit.tpfoyer17.repositories.ReservationRepository;
 import tn.esprit.tpfoyer17.repositories.UniversiteRepository;
 import tn.esprit.tpfoyer17.services.interfaces.IReservationService;
-
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.List;
@@ -68,7 +67,6 @@ public class ReservationService implements IReservationService {
         }
         return null;
     }
-
     @Override
     public List<Reservation> getReservationParAnneeUniversitaireEtNomUniversite(LocalDate anneeUniversite, String nomUniversite) {
         return reservationRepository.recupererParBlocEtTypeChambre(nomUniversite, anneeUniversite);
@@ -122,7 +120,7 @@ public class ReservationService implements IReservationService {
         return numChambre + "-" + nomBloc + "-" + LocalDate.now().getYear();
     }
 
-    private boolean capaciteChambreMaximale(Chambre chambre) {
+    public static  boolean capaciteChambreMaximale(Chambre chambre) {
         switch (chambre.getTypeChambre()) {
             case SIMPLE -> {
                 return chambre.getReservations().size() < 2;
