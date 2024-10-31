@@ -1,10 +1,10 @@
 package tn.esprit.tpfoyer17;
 
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Assertions;
+import static org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mockito.*;
+import static org.mockito.Mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,10 +18,10 @@ import java.util.*;
 @ExtendWith(MockitoExtension.class)
 
 public class UniversiteServiceTestsMOck {
-    @Mock
-    UniversiteService universiteService;
+    @InjectMocks
+   private UniversiteService universiteService;
      @Mock
-    UniversiteRepository universiteRepository;
+    private UniversiteRepository universiteRepository;
     @Test
     void addUniversitytest() {
         Universite newuniversitie= new Contrat();
