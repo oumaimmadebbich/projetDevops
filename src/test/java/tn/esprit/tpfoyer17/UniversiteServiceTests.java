@@ -17,7 +17,7 @@ import java.util.*;
 
 @ExtendWith(MockitoExtension.class)
 
-public class UniversiteServiceTestsMOck {
+public class UniversiteServiceTests{
     @InjectMocks
    private UniversiteService universiteService;
      @Mock
