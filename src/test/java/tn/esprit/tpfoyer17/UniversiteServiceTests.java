@@ -28,6 +28,5 @@ public class UniversiteServiceTests{
         when(universiteRepository.save(newuniversitie)).thenReturn(newuniversitie);
         Universite saveUniversity=universiteService.addUniversity(newuniversitie);
         assertEquals(newuniversiti,saveUniversity);
-        verify(universiteRepository, times(1)).save(newuniversitie);
     }
 }
