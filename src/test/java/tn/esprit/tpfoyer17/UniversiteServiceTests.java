@@ -16,7 +16,7 @@ import tn.esprit.tpfoyer17.services.impementations.UniversiteService;
 @SpringBootTest
 
 @Slf4j
-public class UniversiteServiceTestsMOck {
+public class UniversiteServiceTests {
     @Autowired
     UniversiteService universiteService;
     UniversiteRepository universiteRepository;
