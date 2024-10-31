@@ -24,7 +24,7 @@ public class UniversiteServiceTestsMOck {
     private UniversiteRepository universiteRepository;
     @Test
     void addUniversitytest() {
-        Universite newuniversitie= new Contrat();
+        Universite newuniversitie= new Universite();
         when(universiteRepository.save(newuniversitie)).thenReturn(newuniversitie);
         Universite saveUniversity=universiteService.addUniversity(newuniversitie);
         assertEquals(newuniversiti,saveUniversity);
