@@ -14,6 +14,7 @@ import tn.esprit.tpfoyer17.services.impementations.UniversiteService;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import java.util.*;
+import org.junit.Assert;
 
 @ExtendWith(MockitoExtension.class)
 
@@ -27,6 +28,6 @@ public class UniversiteServiceTests{
         Universite newuniversitie= new Universite();
         when(universiteRepository.save(newuniversitie)).thenReturn(newuniversitie);
         Universite saveUniversity=universiteService.addUniversity(newuniversitie);
-        assertEquals(newuniversitie,saveUniversity);
+        Assert.assertEquals(newuniversitie,saveUniversity);
     }
 }
