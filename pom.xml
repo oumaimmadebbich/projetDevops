@@ -59,6 +59,26 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.8</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
@@ -76,7 +96,7 @@
     <distributionManagement>
         <repository>
             <id>deploymentRepo</id> <!-- ID correspondant à celui du settings.xml -->
-            <name>Nexus Repository</name>
+            <name>Nexus Repository</name>mvn
             <url>http://192.168.1.100:8081/repository/maven-snapshots/</url> <!-- Assurez-vous que l'URL est correcte -->
         </repository>
     </distributionManagement>
