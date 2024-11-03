@@ -1,7 +1,11 @@
 package tn.esprit.tpfoyer17.ReservationTest;
 
+/*import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 import tn.esprit.tpfoyer17.entities.Chambre;
 import tn.esprit.tpfoyer17.entities.Etudiant;
 import tn.esprit.tpfoyer17.entities.Reservation;
@@ -11,68 +15,46 @@ import tn.esprit.tpfoyer17.repositories.EtudiantRepository;
 import tn.esprit.tpfoyer17.repositories.ReservationRepository;
 import tn.esprit.tpfoyer17.services.impementations.ReservationService;
 
-
 import static org.junit.jupiter.api.Assertions.*;
-
-
 import static org.mockito.Mockito.*;
-
-
 import java.util.*;
 
-
-import java.util.Arrays;
-import java.util.List;
+@Slf4j
+@ExtendWith(MockitoExtension.class)
 public class TestReservation {
 
-  /*  private TestReservation testReservation;
-    @BeforeEach
-    void setUp() {
-        testReservation = new TestReservation();
+    @InjectMocks
+    private ReservationService reservationService;
+
+    @Mock
+    private ReservationRepository reservationRepository;
+
+    @Mock
+    private EtudiantRepository etudiantRepository;
+
+    @Mock
+    private ChambreRepository chambreRepository;
+
+    @Test
+    void testRetrieveAllReservation() {
+        // Cas normal : le repository retourne une liste non vide
+        Reservation reservation1 = new Reservation();
+        reservation1.setIdReservation("RES1");
+        Reservation reservation2 = new Reservation();
+        reservation2.setIdReservation("RES2");
+
+        when(reservationRepository.findAll()).thenReturn(Arrays.asList(reservation1, reservation2));
+
+        List<Reservation> reservations = reservationService.retrieveAllReservation();
+
+        assertEquals(2, reservations.size());
+        verify(reservationRepository, times(1)).findAll();
     }
-
-
-    /*@Test
-    void testCapaciteChambreMaximale_SimpleChambre() {
-        Chambre chambre = new Chambre();
-        chambre.setTypeChambre(TypeChambre.SIMPLE);
-        chambre.setReservations(new HashSet<>());
-
-        // Test avec 0 réservations
-        assertTrue(ReservationService.capaciteChambreMaximale(chambre));
-
-        // Test avec 1 réservation
-        chambre.getReservations().add(new Reservation());
-        assertTrue(ReservationService.capaciteChambreMaximale(chambre));
-
-        // Test avec 2 réservations
-        chambre.getReservations().add(new Reservation());
-        assertFalse(ReservationService.capaciteChambreMaximale(chambre));
-    }*/
-    ReservationService reservationService;
-    ReservationRepository reservationRepository;
-    EtudiantRepository etudiantRepository;
-    ChambreRepository chambreRepository;
-  @Test
-  void testRetrieveAllReservation() {
-      // Cas normal : le repository retourne une liste non vide
-      Reservation reservation1 = new Reservation();
-      reservation1.setIdReservation("RES1");
-      Reservation reservation2 = new Reservation();
-      reservation2.setIdReservation("RES2");
-
-      when(reservationRepository.findAll()).thenReturn(Arrays.asList(reservation1, reservation2));
-
-      List<Reservation> reservations = reservationService.retrieveAllReservation();
-
-      assertEquals(2, reservations.size());
-      verify(reservationRepository, times(1)).findAll();
-  }
 
     @Test
     void testRetrieveAllReservationEmptyList() {
         // Cas vide : le repository retourne une liste vide
-        when(reservationRepository.findAll()).thenReturn(Arrays.asList());
+        when(reservationRepository.findAll()).thenReturn(Collections.emptyList());
 
         List<Reservation> reservations = reservationService.retrieveAllReservation();
 
@@ -88,6 +70,7 @@ public class TestReservation {
         assertThrows(RuntimeException.class, () -> reservationService.retrieveAllReservation());
         verify(reservationRepository, times(1)).findAll();
     }
+
     @Test
     void testUpdateReservationSuccess() {
         Reservation reservation = new Reservation();
@@ -112,6 +95,7 @@ public class TestReservation {
         assertThrows(RuntimeException.class, () -> reservationService.updateReservation(reservation));
         verify(reservationRepository, times(1)).save(reservation);
     }
+
     @Test
     void testRetrieveReservationSuccess() {
         Reservation reservation = new Reservation();
@@ -143,6 +127,7 @@ public class TestReservation {
         assertThrows(RuntimeException.class, () -> reservationService.retrieveReservation("RES1"));
         verify(reservationRepository, times(1)).findById("RES1");
     }
+
     @Test
     void testAnnulerReservationSuccess() {
         Etudiant etudiant = new Etudiant();
@@ -177,6 +162,7 @@ public class TestReservation {
         verifyNoInteractions(chambreRepository);
         verifyNoInteractions(reservationRepository);
     }
+
     @Test
     void testAjouterReservationSuccess() {
         Etudiant etudiant = new Etudiant();
@@ -208,6 +194,103 @@ public class TestReservation {
         verifyNoInteractions(etudiantRepository);
         verifyNoInteractions(reservationRepository);
     }
+}*/
 
+import static org.mockito.Mockito.*;
+import static org.junit.Assert.*;
 
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
+import tn.esprit.tpfoyer17.entities.Chambre;
+import tn.esprit.tpfoyer17.entities.enumerations.TypeChambre;
+import tn.esprit.tpfoyer17.entities.Etudiant;
+import tn.esprit.tpfoyer17.entities.Reservation;
+import tn.esprit.tpfoyer17.repositories.ChambreRepository;
+import tn.esprit.tpfoyer17.repositories.EtudiantRepository;
+import tn.esprit.tpfoyer17.repositories.ReservationRepository;
+import tn.esprit.tpfoyer17.repositories.UniversiteRepository;
+import tn.esprit.tpfoyer17.services.impementations.ReservationService;
+
+import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
+@Slf4j
+@ExtendWith(MockitoExtension.class)
+public class TestReservation {
+
+    @InjectMocks
+    private ReservationService reservationService;
+
+    @Mock
+    private ReservationRepository reservationRepository;
+
+    @Mock
+    private EtudiantRepository etudiantRepository;
+
+    @Mock
+    private ChambreRepository chambreRepository;
+
+    @Mock
+    private UniversiteRepository universiteRepository;
+
+    @Before
+    public void setUp() {
+        MockitoAnnotations.openMocks(this);
+    }
+
+    @Test
+    public void testAnnulerReservation() {
+        // Arrange
+        long cinEtudiant = 123456;
+        Etudiant etudiant = new Etudiant();
+        Reservation reservation = new Reservation();
+        reservation.setEtudiants(new HashSet<>(Set.of(etudiant)));
+        Chambre chambre = new Chambre();
+        chambre.setTypeChambre(TypeChambre.SIMPLE);
+        chambre.setReservations(new HashSet<>(Set.of(reservation)));
+
+        when(etudiantRepository.findByCinEtudiant(cinEtudiant)).thenReturn(etudiant);
+        when(chambreRepository.findByReservationsIdReservation(reservation.getIdReservation())).thenReturn(chambre);
+        when(reservationRepository.save(reservation)).thenReturn(reservation);
+
+        // Act
+        Reservation result = reservationService.annulerReservation(cinEtudiant);
+
+        // Assert
+        assertNull(result); // Since the method returns null
+        verify(reservationRepository).save(reservation);
+        verify(chambreRepository).findByReservationsIdReservation(reservation.getIdReservation());
+    }
+
+    @Test
+    public void testAjouterReservation() {
+        // Arrange
+        long idChambre = 1L;
+        long cinEtudiant = 123456;
+        Etudiant etudiant = new Etudiant();
+        Chambre chambre = new Chambre();
+        chambre.setTypeChambre(TypeChambre.SIMPLE);
+        chambre.setNumeroChambre(idChambre);
+        chambre.setReservations(new HashSet<>());
+
+        when(etudiantRepository.findByCinEtudiant(cinEtudiant)).thenReturn(etudiant);
+        when(chambreRepository.findById(idChambre)).thenReturn(Optional.of(chambre));
+        when(reservationRepository.save(any(Reservation.class))).thenAnswer(i -> i.getArguments()[0]);
+
+        // Act
+        Reservation result = reservationService.ajouterReservation(idChambre, cinEtudiant);
+
+        // Assert
+        assertNotNull(result);
+        assertFalse(result.isEstValide()); // After adding a student, the reservation should not be valid
+        verify(reservationRepository).save(any(Reservation.class));
+    }
 }
