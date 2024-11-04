@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Set;
 
 @Service
-<span class="nc" id="L23">@AllArgsConstructor</span>
+<span class="fc" id="L23">@AllArgsConstructor</span>
 <span class="fc" id="L24">@Slf4j</span>
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ReservationService implements IReservationService {
@@ -31,24 +31,24 @@ public class ReservationService implements IReservationService {
 
     @Override
     public List&lt;Reservation&gt; retrieveAllReservation() {
-<span class="nc" id="L34">        return (List&lt;Reservation&gt;) reservationRepository.findAll();</span>
+<span class="fc" id="L34">        return (List&lt;Reservation&gt;) reservationRepository.findAll();</span>
     }
 
     @Override
     public Reservation updateReservation(Reservation res) {
-<span class="nc" id="L39">        return reservationRepository.save(res);</span>
+<span class="fc" id="L39">        return reservationRepository.save(res);</span>
     }
 
     @Override
     public Reservation retrieveReservation(String idReservation) {
-<span class="nc" id="L44">        return reservationRepository.findById(idReservation).orElse(null);</span>
+<span class="fc" id="L44">        return reservationRepository.findById(idReservation).orElse(null);</span>
 
     }
 
     @Transactional
     public Reservation annulerReservation(long cinEtudiant) {
-<span class="nc" id="L50">        Etudiant etudiant = etudiantRepository.findByCinEtudiant(cinEtudiant);</span>
-<span class="nc" id="L51">        Set&lt;Reservation&gt; reservationList = etudiant.getReservations();</span>
+<span class="fc" id="L50">        Etudiant etudiant = etudiantRepository.findByCinEtudiant(cinEtudiant);</span>
+<span class="fc" id="L51">        Set&lt;Reservation&gt; reservationList = etudiant.getReservations();</span>
 <span class="nc bnc" id="L52" title="All 2 branches missed.">        for (Reservation reservation : reservationList) {</span>
 <span class="nc" id="L53">            reservation.getEtudiants().remove(etudiant);</span>
 <span class="nc" id="L54">            reservationRepository.save(reservation);</span>
@@ -79,11 +79,11 @@ public class ReservationService implements IReservationService {
 
     @Transactional
     public Reservation ajouterReservation(long idChambre, long cinEtudiant) {
-<span class="nc" id="L82">        Etudiant etudiant = etudiantRepository.findByCinEtudiant(cinEtudiant);</span>
-<span class="nc" id="L83">        Chambre chambre = chambreRepository.findById(idChambre).orElse(null);</span>
+<span class="fc" id="L82">        Etudiant etudiant = etudiantRepository.findByCinEtudiant(cinEtudiant);</span>
+<span class="fc" id="L83">        Chambre chambre = chambreRepository.findById(idChambre).orElse(null);</span>
 
-<span class="nc bnc" id="L85" title="All 2 branches missed.">        assert chambre != null;</span>
-<span class="nc" id="L86">        String numReservation = generateId(chambre.getNumeroChambre(),</span>
+<span class="fc bfc" id="L85" title="All 2 branches covered.">        assert chambre != null;</span>
+<span class="pc" id="L86">        String numReservation = generateId(chambre.getNumeroChambre(),</span>
 <span class="nc" id="L87">                chambre.getBloc().getNomBloc());</span>
 
 <span class="nc" id="L89">        Reservation reservation = reservationRepository.findById(numReservation).orElse(</span>

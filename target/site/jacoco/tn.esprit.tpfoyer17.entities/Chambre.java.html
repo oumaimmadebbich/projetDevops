@@ -22,22 +22,22 @@ public class Chambre implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Setter(AccessLevel.NONE)
+    //@Setter(AccessLevel.NONE)
 <span class="nc" id="L26">    long idChambre;</span>
 
-<span class="nc" id="L28">    long numeroChambre;</span>
+<span class="fc" id="L28">    long numeroChambre;</span>
 
     @Enumerated(EnumType.STRING)
-<span class="fc" id="L31">    TypeChambre typeChambre;</span>
+<span class="nc" id="L31">    TypeChambre typeChambre;</span>
 
     @ToString.Exclude
     @ManyToOne
     @JsonIgnore
-<span class="nc" id="L36">    Bloc bloc;</span>
+<span class="fc" id="L36">    Bloc bloc;</span>
 
     @ToString.Exclude
     @OneToMany
     @JsonIgnore
-<span class="fc" id="L41">    Set&lt;Reservation&gt; reservations ;</span>
+<span class="nc" id="L41">    Set&lt;Reservation&gt; reservations ;</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
