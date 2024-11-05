@@ -13,42 +13,42 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Service
-<span class="nc" id="L16">@AllArgsConstructor</span>
-<span class="nc" id="L17">@Slf4j</span>
+<span class="fc" id="L16">@AllArgsConstructor</span>
+<span class="fc" id="L17">@Slf4j</span>
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class EtudiantService implements IEtudiantService {
     EtudiantRepository etudiantRepository;
 
     @Override
     public List&lt;Etudiant&gt; retrieveAllEtudiants() {
-<span class="nc" id="L24">        return (List&lt;Etudiant&gt;) etudiantRepository.findAll();</span>
+<span class="fc" id="L24">        return (List&lt;Etudiant&gt;) etudiantRepository.findAll();</span>
     }
 
     @Override
     public List&lt;Etudiant&gt; addEtudiants(List&lt;Etudiant&gt; etudiants) {
-<span class="nc" id="L29">        return (List&lt;Etudiant&gt;) etudiantRepository.saveAll(etudiants);</span>
+<span class="fc" id="L29">        return (List&lt;Etudiant&gt;) etudiantRepository.saveAll(etudiants);</span>
     }
 
     @Override
     public Etudiant updateEtudiant(Etudiant e) {
-<span class="nc" id="L34">        return etudiantRepository.save(e);</span>
+<span class="fc" id="L34">        return etudiantRepository.save(e);</span>
     }
 
     @Override
     public Etudiant retrieveEtudiant(long idEtudiant) {
-<span class="nc" id="L39">        return etudiantRepository.findById(idEtudiant).orElse(null);</span>
+<span class="fc" id="L39">        return etudiantRepository.findById(idEtudiant).orElse(null);</span>
     }
 
     @Override
     public void removeEtudiant(long idEtudiant) {
-<span class="nc" id="L44">        etudiantRepository.deleteById(idEtudiant);</span>
+<span class="fc" id="L44">        etudiantRepository.deleteById(idEtudiant);</span>
 
-<span class="nc" id="L46">    }</span>
+<span class="fc" id="L46">    }</span>
 
     @Override
     public List&lt;Etudiant&gt; findByReservationsAnneeUniversitaire() {
-<span class="nc" id="L50">        System.out.println((LocalDate.now()).getYear());</span>
-<span class="nc" id="L51">        return etudiantRepository.findByReservationsAnneeUniversitaire(LocalDate.now());</span>
+<span class="fc" id="L50">        System.out.println((LocalDate.now()).getYear());</span>
+<span class="fc" id="L51">        return etudiantRepository.findByReservationsAnneeUniversitaire(LocalDate.now());</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

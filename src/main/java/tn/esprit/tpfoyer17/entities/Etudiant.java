@@ -37,6 +37,4 @@ public class Etudiant implements Serializable {
     @JsonIgnore
     Set<Reservation> reservations;
 
-    public void setIdEtudiant(long l) {
-    }
 }
