@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  tpfoyer-app:
+    image: sami2001/tpfoyer:0.0.1  # Nom et version de votre image
+    restart: on-failure
+    ports:
+      - "8082:8080"  # Redirige le port 8082 de l'hôte vers le port 8080 du conteneur (ajustez si nécessaire)
+    environment:
+      # Variables d'environnement pour l'application
+      SPRING_PROFILES_ACTIVE: "production"  # Activer le profil de production, si applicable
+      LOG_LEVEL: "info"  # Niveau de logging, modifiez selon vos besoins (ex: debug, info, warn, error)
+      SERVER_PORT: 8080  # Port sur lequel l'application écoute dans le conteneur
+      # Autres variables spécifiques à votre application
+      # DB_URL: "jdbc:mysql://mysqlDb:3306/tpfoyer"
+      # API_KEY: "votre_api_key"
+    stdin_open: true
+    tty: true
