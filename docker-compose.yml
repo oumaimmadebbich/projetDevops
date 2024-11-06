@@ -1,18 +1,34 @@
 version: "3.8"
 
 services:
-  tpfoyer-app:
-    image: sami2001/tpfoyer:0.0.1  # Nom et version de votre image
+  mysqlDb:
+    image: mysql:5.7
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_DATABASE=foyer17
+    ports:
+      - "3306:3306"
+    volumes:
+      - db:/var/lib/mysql
+
+  app-kaddem:
+    depends_on:
+      - mysqlDb
+    image: sami2001/tpfoyer:0.0.1  
     restart: on-failure
     ports:
-      - "8082:8080"  # Redirige le port 8082 de l'hôte vers le port 8080 du conteneur (ajustez si nécessaire)
+      - "8082:8082"
     environment:
-      # Variables d'environnement pour l'application
-      SPRING_PROFILES_ACTIVE: "production"  # Activer le profil de production, si applicable
-      LOG_LEVEL: "info"  # Niveau de logging, modifiez selon vos besoins (ex: debug, info, warn, error)
-      SERVER_PORT: 8080  # Port sur lequel l'application écoute dans le conteneur
-      # Autres variables spécifiques à votre application
-      # DB_URL: "jdbc:mysql://mysqlDb:3306/tpfoyer"
-      # API_KEY: "votre_api_key"
+      SPRING_APPLICATION_JSON: '{
+        "spring.datasource.url": "jdbc:mysql://mysqlDb:3306/nidhal?createDatabaseIfNotExist=true",
+        "spring.datasource.username": "root",
+        "spring.datasource.password": "rootpassword",
+        "spring.jpa.properties.hibernate.dialect": "org.hibernate.dialect.MySQL5InnoDBDialect",
+        "spring.jpa.hibernate.ddl-auto": "update"
+      }'
     stdin_open: true
     tty: true
+
+volumes:
+  db:
