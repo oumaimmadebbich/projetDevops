@@ -22,7 +22,7 @@
     </properties>
 
     <dependencies>
-        <!-- Spring Boot Dependencies -->
+        <!-- Déjà existants -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -51,7 +51,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- Testing Dependencies -->
+        <!-- Dépendances de test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -78,7 +78,6 @@
 
     <build>
         <plugins>
-            <!-- Spring Boot Maven Plugin for building and running the application -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -91,8 +90,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-
-            <!-- JaCoCo Maven Plugin for code coverage reports -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -112,30 +109,14 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <!-- Maven Deploy Plugin for deploying the artifact to Nexus -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>3.0.0-M1</version>
-            </plugin>
         </plugins>
     </build>
 
     <distributionManagement>
-        <!-- Deployment Repository Configuration for Releases -->
         <repository>
             <id>deploymentRepo</id>
-            <name>Nexus Releases</name>
+            <name>Nexus Repository</name>
             <url>http://192.168.1.100:8081/repository/maven-releases/</url>
         </repository>
-
-        <!-- Snapshot Repository Configuration -->
-        <snapshotRepository>
-            <id>deploymentRepo</id>
-            <name>Nexus Snapshots</name>
-            <url>http://192.168.1.100:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
     </distributionManagement>
-
 </project>
