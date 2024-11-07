@@ -13,7 +13,7 @@
 
     <groupId>tn.esprit</groupId>
     <artifactId>tpFoyer-17</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>tpFoyer-17</name>
     <description>tpFoyer-17</description>
 
@@ -116,7 +116,7 @@
         <repository>
             <id>deploymentRepo</id>
             <name>Nexus Repository</name>
-            <url>http://192.168.1.100:8081/repository/maven-snapshots/</url>
+            <url>http://192.168.1.100:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 </project>
