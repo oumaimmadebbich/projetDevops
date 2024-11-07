@@ -16,20 +16,6 @@ public interface ChambreRepository extends CrudRepository<Chambre, Long> {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     List<Chambre> findByNumeroChambreIn(List<Long> numeroChambreList);
 
     List<Chambre> findByBlocIdBloc(Long idBloc);
