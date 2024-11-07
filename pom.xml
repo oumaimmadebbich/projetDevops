@@ -22,7 +22,7 @@
     </properties>
 
     <dependencies>
-        <!-- Dépendances principales de Spring Boot -->
+        <!-- Déjà existants -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -51,7 +51,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- Dépendances pour les tests -->
+        <!-- Dépendances de test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -78,7 +78,6 @@
 
     <build>
         <plugins>
-            <!-- Plugin Spring Boot pour l'assemblage de l'application -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -91,8 +90,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-            
-            <!-- Plugin Jacoco pour la couverture de code -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
