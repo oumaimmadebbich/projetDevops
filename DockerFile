@@ -1,4 +1,11 @@
+# Use OpenJDK 17 as the base image
 FROM openjdk:17
+
+# Expose the port the app will run on
 EXPOSE 8082
-ADD target/tpFoyer-17-0.0.1.jar /tpfoyer-0.0.1.jar
-ENTRYPOINT ["java", "-jar", "/tpfoyer-0.0.1.jar"]
+
+# Copy the built jar from the target directory into the container
+ADD target/tpFoyer-17-0.0.2.jar /tpfoyer-0.0.2.jar
+
+# Set the entrypoint to run the application
+ENTRYPOINT ["java", "-jar", "/tpfoyer-0.0.2.jar"]
