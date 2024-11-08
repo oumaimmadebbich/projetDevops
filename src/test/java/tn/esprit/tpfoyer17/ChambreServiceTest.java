@@ -65,6 +65,7 @@ public class ChambreServiceTest {
         verify(chambreRepository, times(1)).save(chambre);
     }
 
+
     @Test
     public void testUpdateChambre() {
         Chambre chambre = new Chambre();
