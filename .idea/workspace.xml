@@ -4,120 +4,100 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5b3eb0a-f203-49b1-84d9-54a7f79b0c9d" name="Changes" comment="test222">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_15_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_15_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_15_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_15_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_15_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_15_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_15_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_0_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_149.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_smallrye_jandex_3_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_jakarta_2_2_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_jakarta_2_2_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_jakarta_2_2_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_14_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_14_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_20_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_20_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_10_1_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_10_1_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_24_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_angus_angus_activation_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_4_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_4_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_4_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_6_0_6_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_2_7_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_5_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_2_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_starter_common_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_starter_webmvc_api_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_starter_webmvc_ui_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_3_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_6_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_swagger_ui_4_15_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_webjars_locator_core_0_52.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="b5b3eb0a-f203-49b1-84d9-54a7f79b0c9d" name="Changes" comment="test jacoco">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/tpfoyer17/ChambreServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer17/repositories/ChambreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer17/repositories/ChambreRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/tpfoyer17/TpFoyer17ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/tpfoyer17/ChambreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpFoyer-17.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/tpfoyer17/ChambreTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/css/maven-base.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/css/maven-base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/css/print.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/css/print.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/dependencies.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/dependencies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/dependency-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/dependency-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/dependency-management.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/dependency-management.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/distribution-management.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/distribution-management.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.configurations/SpringDocConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.configurations/SpringDocConfig.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.configurations/SpringDocConfig.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.configurations/SpringDocConfig.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.configurations/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.configurations/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.configurations/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.configurations/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/BlocController.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/BlocController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/BlocController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/BlocController.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/ChambreController.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/ChambreController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/ChambreController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/ChambreController.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/EtudiantController.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/EtudiantController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/EtudiantController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/EtudiantController.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/FoyerController.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/FoyerController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/FoyerController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/FoyerController.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/ReservationController.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/ReservationController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/ReservationController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/ReservationController.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/UniversiteController.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/UniversiteController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/UniversiteController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/UniversiteController.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.controllers/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities.enumerations/TypeChambre.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities.enumerations/TypeChambre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities.enumerations/TypeChambre.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities.enumerations/TypeChambre.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities.enumerations/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities.enumerations/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities.enumerations/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities.enumerations/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Bloc$BlocBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Bloc$BlocBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Bloc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Bloc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Bloc.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Bloc.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Chambre$ChambreBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Chambre$ChambreBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Chambre.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Chambre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Chambre.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Chambre.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Etudiant$EtudiantBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Etudiant$EtudiantBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Etudiant.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Etudiant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Etudiant.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Etudiant.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Foyer$FoyerBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Foyer$FoyerBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Foyer.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Foyer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Foyer.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Foyer.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Reservation$ReservationBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Reservation$ReservationBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Reservation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Reservation.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Reservation.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Universite$UniversiteBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Universite$UniversiteBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Universite.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Universite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Universite.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/Universite.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.entities/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/BlocService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/BlocService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/BlocService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/BlocService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/ChambreService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/ChambreService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/ChambreService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/ChambreService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/EtudiantService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/EtudiantService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/EtudiantService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/EtudiantService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/FoyerService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/FoyerService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/FoyerService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/FoyerService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/ReservationService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/ReservationService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/ReservationService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/ReservationService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/UniversiteService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/UniversiteService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/UniversiteService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/UniversiteService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17.services.impementations/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17/TpFoyer17Application.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17/TpFoyer17Application.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17/TpFoyer17Application.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17/TpFoyer17Application.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer17/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/licenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/licenses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/plugin-management.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/plugin-management.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/plugins.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/plugins.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/project-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/project-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/scm.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/scm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.tpfoyer17.ChambreTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.tpfoyer17.ChambreTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/tpfoyer17/ChambreTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tpFoyer-17-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/tpFoyer-17-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tpFoyer-17-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/tpFoyer-17-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,27 +123,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;samar-sedraoui&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/projetDevops&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "samar-sedraoui",
+    "last_directory_selection": "C:/Users/PC/projetDevops/src/main/java/tn/esprit/tpfoyer17/services/impementations",
+    "last_opened_file_path": "C:/Users/PC/projetDevops",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="TpFoyer17Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -185,7 +166,8 @@
       <workItem from="1730417713897" duration="8702000" />
       <workItem from="1730803406077" duration="3865000" />
       <workItem from="1730993709091" duration="1209000" />
-      <workItem from="1731011132369" duration="3161000" />
+      <workItem from="1731011132369" duration="4942000" />
+      <workItem from="1731082089159" duration="12721000" />
     </task>
     <task id="LOCAL-00001" summary="test222">
       <option name="closed" value="true" />
@@ -195,7 +177,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730726933710</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test jacoco">
+      <option name="closed" value="true" />
+      <created>1731017526503</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731017526503</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test jacoco">
+      <option name="closed" value="true" />
+      <created>1731017634067</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731017634067</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +201,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test222" />
-    <option name="LAST_COMMIT_MESSAGE" value="test222" />
+    <MESSAGE value="test jacoco" />
+    <option name="LAST_COMMIT_MESSAGE" value="test jacoco" />
   </component>
 </project>
