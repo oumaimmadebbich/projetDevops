@@ -50,7 +50,7 @@ public class FoyerService implements IFoyerService {
     foyerRepository.deleteById(idFoyer);
     }
 
-    @Transactional
+    /*@Transactional
     public Foyer ajouterFoyerEtAffecterAUniversite(Foyer foyer, long idUniversite) {
         Universite universite = universiteRepository.findById(idUniversite).orElse(null);
 foyerRepository.save(foyer);
@@ -65,5 +65,5 @@ for(Bloc bloc : foyer.getBlocs())
         universiteRepository.save(universite);
 
         return foyer;
-    }
+    }*/
 }

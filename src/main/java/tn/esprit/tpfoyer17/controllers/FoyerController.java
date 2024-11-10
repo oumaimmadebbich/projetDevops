@@ -36,10 +36,10 @@ public class FoyerController {
     public void removeFoyer(@PathVariable("idFoyer") long idFoyer) {
         foyerService.removeFoyer(idFoyer);
     }
-@PutMapping("/ajouterFoyerEtAffecterAUniversite/{idUniversite}")
-    public Foyer ajouterFoyerEtAffecterAUniversite(@RequestBody Foyer foyer, @PathVariable("idUniversite") long idUniversite) {
+/*@PutMapping("/ajouterFoyerEtAffecterAUniversite/{idUniversite}")
+    /*public Foyer ajouterFoyerEtAffecterAUniversite(@RequestBody Foyer foyer, @PathVariable("idUniversite") long idUniversite) {
         return foyerService.ajouterFoyerEtAffecterAUniversite(foyer, idUniversite);
-    }
+    }*/
 
     IFoyerService foyerService;
 }
