@@ -30,30 +30,7 @@ services:
     stdin_open: true
     tty: true
 
-  prometheus:
-    image: prom/prometheus
-    container_name: prometheus
-    restart: unless-stopped
-    ports:
-      - "9090:9090"  # Port exposé pour accéder à Prometheus
-    volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml  # Votre fichier de configuration Prometheus
-    networks:
-      - monitoring  # Crée une réseau dédié pour la surveillance
-
-  grafana:
-    image: grafana/grafana
-    container_name: grafana
-    restart: unless-stopped
-    ports:
-      - "3000:3000"  # Port exposé pour accéder à Grafana
-    environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin  # Définir un mot de passe pour l'administrateur Grafana
-    depends_on:
-      - prometheus  # Assurez-vous que Prometheus démarre avant Grafana
-    networks:
-      - monitoring  # Utilisation du même réseau que Prometheus pour faciliter la communication
-
+  
 volumes:
   db:  # Volume pour MySQL
 
