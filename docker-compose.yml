@@ -6,7 +6,7 @@ services:
     container_name: mysqldb
     restart: unless-stopped
     environment:
-      - MYSQL_ROOT_PASSWORD=motdepasse123
+      - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=tpfoyer_db
       - MYSQL_ALLOW_EMPTY_PASSWORD=false
     ports:
@@ -27,7 +27,7 @@ services:
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysqldb:3306/tpfoyer_db
       - SPRING_DATASOURCE_USERNAME=root
-      - SPRING_DATASOURCE_PASSWORD=motdepasse123
+      - SPRING_DATASOURCE_PASSWORD=root
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     stdin_open: true
     tty: true
