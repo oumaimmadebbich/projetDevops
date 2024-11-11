@@ -16,7 +16,7 @@ services:
     volumes:
       - db:/var/lib/mysql
 
-  app-kaddem:
+  app-nidhal:
     depends_on:
       - mysqlDb
     image: nidhal198/tpfoyer:0.0.1  # Utilisez ici la version spécifique 0.0.1
