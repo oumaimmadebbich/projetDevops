@@ -1,10 +1,4 @@
 version: "3.8"
-
-services:
-  spring-boot-app:
-    image: nidhal198/tpfoyer:0.0.1 # Remplacez par votre image Docker
-    ports:
-      - "8085:8085"
   mysqlDb:
     image: mysql:5.7
     restart: unless-stopped
@@ -31,6 +25,21 @@ services:
         "spring.jpa.properties.hibernate.dialect": "org.hibernate.dialect.MySQL5InnoDBDialect",
         "spring.jpa.hibernate.ddl-auto": "update"
       }'
+    prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    depends_on:
+      - app-kaddem
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
     stdin_open: true
     tty: true
 
