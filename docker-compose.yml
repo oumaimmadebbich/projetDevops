@@ -18,13 +18,13 @@ services:
 
   app-tp-foyer:
     depends_on:
-      - mysqldb
+      - localhost
     image: nidhal198/tpfoyer:0.0.1
     restart: on-failure
     ports:
       - 8089:8089
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysqldb:3306/tpfoyer_db
+      - SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3306/tpfoyer_db
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=motdepasse123
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
