@@ -20,7 +20,7 @@ services:
   app-tp-foyer:
     depends_on:
       - mysqldb
-    image: nidhal198/tpfoyer:1.0.0
+    image: nidhal198/tpfoyer:0.0.1
     restart: on-failure
     ports:
       - 8082:8082
