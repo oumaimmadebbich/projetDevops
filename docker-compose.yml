@@ -15,7 +15,7 @@ services:
   app-kaddem:
     depends_on:
       - mysqlDb
-    image: wessim7/tpfoyer:0.0.1  
+    image: wessim7000/tpfoyer:0.0.1  
     restart: on-failure
     ports:
       - "8082:8082"
